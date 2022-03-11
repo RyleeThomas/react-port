@@ -2,7 +2,7 @@
   --primary: rgb(92, 26, 17); 
   --secondary: rgb(75, 73, 73);
   --background: rgb(245, 245, 245);
-  --accent: rgb(165, 165, 165);
+  --accent: rgb(216, 216, 216);
 }
 
 * {
@@ -19,10 +19,26 @@ body {
 }
 
 header {
-  padding-bottom: 20px;
-  margin: 10px;
+  padding-bottom: 5%;
+  margin: 1%;
 }
 
+h1,h2,h3 {
+  color: var(--primary);
+}
+
+p {
+  color: var(--secondary);
+}
+
+section {
+  padding: 20px;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
 /* ---- main navigation -----*/
 
 ul {
@@ -41,7 +57,7 @@ ul li:first-child {
 }
 
 ul li span {
-  display: block;
+  display: flex;
   padding: 8px;
   cursor: pointer;
   text-decoration: none;
@@ -61,11 +77,63 @@ span:hover {
   justify-content: center;
 }
 .card {
-  background-color: var(--accent);
   width: 95%;
   padding: 10px;
   margin: 10px;
+  border-radius: 5%;
   flex-wrap: wrap;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.headshot {
+  border-radius: 50%;
+  max-width: 40%;
+  max-height: auto;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--secondary);
+}
+
+a:hover {
+  border: 1px var(--secondary) solid;
+  padding: 5px;
+}
+/* ---- form -----*/
+input {
+  background-color: var(--background);
+  border: none;
+  border-bottom: 1px solid var(--accent);
+  padding: 10px;
+  margin: 5px;
+  width: 60%;
+}
+
+textarea {
+  background-color: var(--background);
+  border: none;
+  border-bottom: 1px solid var(--accent);
+  padding: 10px;
+  margin: 5px;
+  width: 60%;
+}
+
+.error-text {
+  font-size: large;
+  color: var(--primary);
+}
+
+button {
+  background-color: var(--secondary);
+  color: var(--background);
+  width: 40%;
+  padding: 10px;
 }
 /* ---- footer and second set of links -----*/
 
@@ -75,6 +143,11 @@ footer {
 
 footer ul li {
   padding: 0px 30px;
+}
+
+.icon {
+  padding: 5px;
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 768px) {

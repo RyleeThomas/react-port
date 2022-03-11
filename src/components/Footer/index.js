@@ -1,13 +1,13 @@
 import React from 'react'; 
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-function Footer(props) { 
+function Footer() { 
 
     return( 
-        <>
-        <h1>Rylee Thomas</h1>
-        <span>Link to Github </span>
-        <span>Link to LinkedIn </span>
-        </>
+        <section className='center'>
+            <span><a className='icon' href='https://github.com/RyleeThomas'><FaGithub></FaGithub></a></span>
+            <span><a className='icon' href='https://www.linkedin.com/in/rylee-thomas-27ba41150/'><FaLinkedin></FaLinkedin></a></span>
+        </section>
     );
 }
 

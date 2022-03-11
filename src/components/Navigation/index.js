@@ -10,7 +10,7 @@ function Navigation(props) {
     return( 
         <nav>
             <ul>
-                <li id='home'>Rylee Thomas</li>
+                <li id='home'>RT</li>
                 <li id='About'>
                     {currentPage === 'About' ? 
                     <span id='About' className='active' onClick={(e) => {setCurrentPage(e.target.id)}} >About</span> :
