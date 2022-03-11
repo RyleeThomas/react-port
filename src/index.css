@@ -1,13 +1,84 @@
+:root {
+  --primary: rgb(92, 26, 17); 
+  --secondary: rgb(75, 73, 73);
+  --background: rgb(245, 245, 245);
+  --accent: rgb(165, 165, 165);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: var(--background);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 1%;
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  padding-bottom: 20px;
+  margin: 10px;
+}
+
+/* ---- main navigation -----*/
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 5px;
+}
+
+ul li {
+  float: right;
+}
+
+ul li:first-child {
+  float: left;
+  font-size: large;
+}
+
+ul li span {
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color:var(--secondary);
+}
+
+span:hover {
+  transform: scale(1.3);
+}
+
+.active {
+  border-bottom: solid var(--primary) 1px;
+}
+/* ---- project cards -----*/
+.container {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: var(--accent);
+  width: 95%;
+  padding: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+/* ---- footer and second set of links -----*/
+
+footer {
+  padding: 50px 20px;
+}
+
+footer ul li {
+  padding: 0px 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
 }
