@@ -3,7 +3,8 @@
 ![License](https://img.shields.io/badge/License-GNU_AGPLv3-blue.svg)
 
   ## Description 
-    Created a Personal Portfolio using React, so that the application is single-pages and loads the componets created on the same page.
+    Created a Personal Portfolio using React, so that the application\
+     is single-pages and loads the componets created on the same page.
 
   ## Table of Contents 
 * [Installation](#installation)
